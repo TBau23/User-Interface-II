@@ -13,6 +13,8 @@ menu, nav, output, section {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
+    max-width: 100%;
+
 }
 
 * {
@@ -35,7 +37,8 @@ nav {
 }
 
 nav a {
-    padding: 1.5%;
+    padding: 2%;
+    border-radius: 10px;
 }
 
 h1 {
@@ -55,7 +58,51 @@ h1 {
     font-size: 35px;
 }   
 
-.intro p {
+.main-photo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.books {
+    width: 35%;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
 
 }
     
+.container div {
+    padding: 1%;
+    margin: 2%;
+    display: flex;
+    width: 15%;
+    align-items: stretch;
+    flex-flow: column wrap;
+}
+
+.container div h3 {
+    padding: 1.5%;
+    text-align: center;
+
+}
+
+.container div p {
+    padding: 1.5%;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    margin: 2%;
+    padding: 1.5%;
+    border-radius: 10px;
+
+}
