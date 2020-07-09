@@ -1,4 +1,6 @@
 /* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Quicksand:wght@500&display=swap');
+
 
 body, div, span, object, 
 h1, h2, h3, h4, h5, h6, p,
@@ -25,7 +27,7 @@ header {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    background-color: orangered;
+    background-color: darkslategray ;
 
 }
 
@@ -39,6 +41,19 @@ nav {
 nav a {
     padding: 2%;
     border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 3px;
+    background-color: darkslategray;
+    color: orangered;
+    font-family: 'Bungee Inline', cursive;
+    transition: 1s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: orange;
+    
+
 }
 
 h1 {
@@ -46,33 +61,47 @@ h1 {
     width: 25%;
     margin: 3% 0;
     text-align: center;
+    letter-spacing: 3px;
+    font-family: 'Bungee Inline', cursive;
+    color: orangered ;
 }
 
 .intro {
     text-align: center;
     margin-bottom: 2%;
     line-height: 1.5;
+    color: white;
+    border: 2px dashed orangered;
+    padding: 2%;
+    width: 30%;
 }
 
 .intro h3 {
     font-size: 35px;
 }   
 
+h3, p {
+    font-family: 'Quicksand' sans-serif;
+}
+
 .main-photo{
     display: flex;
     justify-content: center;
+    background-color: darkslategray;
     
 }
 
 .books {
-    width: 35%;
-    
+    width: 60%;
+    height: 50vh;
+    border: 2px solid orangered;
+    margin: 1% 0;
 }
 
 .container {
     display: flex;
     justify-content: space-around;
-
+    background-color: darkslategray;
 }
     
 .container div {
@@ -80,7 +109,6 @@ h1 {
     margin: 2%;
     display: flex;
     width: 15%;
-    align-items: stretch;
     flex-flow: column wrap;
 }
 
@@ -98,11 +126,20 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
+    background-color: orangered;
 }
 
-footer a {
+footer button {
     margin: 2%;
     padding: 1.5%;
     border-radius: 10px;
+    font-family: 'Bungee Inline', cursive;
+    transition: 1s;
+    background-color: darkslategray;
+    color: white;
+}
 
+footer button:hover {
+    text-decoration: underline;
+    border: 3px dashed white;
 }
