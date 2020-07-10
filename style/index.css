@@ -1,5 +1,5 @@
 /* Add CSS styling here */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Eczar:wght@600&display=swap');
 
 
 body, div, span, object, 
@@ -19,9 +19,9 @@ menu, nav, output, section {
 
 }
 
-* {
+/* * {
     border: 1px solid grey;
-}
+} */
 
 header {
     display: flex;
@@ -52,8 +52,6 @@ nav a {
 nav a:hover {
     text-decoration: underline;
     color: orange;
-    
-
 }
 
 h1 {
@@ -72,17 +70,17 @@ h1 {
     line-height: 1.5;
     color: white;
     border: 2px dashed orangered;
+    border-radius: 100px;
     padding: 2%;
     width: 30%;
+    font-family: 'Eczar', serif;
 }
 
 .intro h3 {
     font-size: 35px;
+    text-decoration: underline;
 }   
 
-h3, p {
-    font-family: 'Quicksand' sans-serif;
-}
 
 .main-photo{
     display: flex;
@@ -100,28 +98,45 @@ h3, p {
 
 .container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: darkslategray;
+    flex-flow: row wrap;
+
 }
     
 .container div {
-    padding: 1%;
+    padding: 1.5%;
     margin: 2%;
     display: flex;
     width: 15%;
     flex-flow: column wrap;
+    text-align: center;
+    color: white;
+    font-family: 'Ezcar', serif;
+    letter-spacing: 2px;
 }
 
 .container div h3 {
-    padding: 1.5%;
-    text-align: center;
-
+    padding-bottom: 5%;
+    font-size: 20px;
 }
 
-.container div p {
-    padding: 1.5%;
-
+.panel4 a {
+    margin: 2%;
+    padding: 2%;
+    border-radius: 10px;
+    transition: 1s;
+    font-family: 'Ezcar', serif;
+    background-color: darkslategray;
+    font-size: 20px;
+    color: white
 }
+
+.panel4 a:hover {
+    text-decoration: underline;
+    background-color: orangered;
+}
+
 
 footer {
     display: flex;
@@ -129,7 +144,7 @@ footer {
     background-color: orangered;
 }
 
-footer button {
+footer a {
     margin: 2%;
     padding: 1.5%;
     border-radius: 10px;
@@ -139,7 +154,8 @@ footer button {
     color: white;
 }
 
-footer button:hover {
+footer a:hover {
     text-decoration: underline;
     border: 3px dashed white;
+    
 }
