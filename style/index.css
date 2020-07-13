@@ -23,6 +23,8 @@ menu, nav, output, section {
     border: 1px solid grey;
 } */
 
+
+
 header {
     display: flex;
     flex-flow: column wrap;
@@ -89,7 +91,7 @@ h1 {
     
 }
 
-.books {
+.jungle {
     width: 60%;
     height: 50vh;
     border: 2px solid orangered;
@@ -108,7 +110,7 @@ h1 {
     padding: 1.5%;
     margin: 2%;
     display: flex;
-    width: 15%;
+    width: 10%;
     flex-flow: column wrap;
     text-align: center;
     color: white;
@@ -116,12 +118,13 @@ h1 {
     letter-spacing: 2px;
 }
 
+
 .container div h3 {
-    padding-bottom: 5%;
+    margin-bottom: 15%;
     font-size: 20px;
 }
 
-.panel4 button {
+.panel5 button {
     margin: 2%;
     padding: 2%;
     border-radius: 10px;
@@ -132,7 +135,7 @@ h1 {
     color: white
 }
 
-.panel4 button:hover {
+.panel5 button:hover {
     text-decoration: underline;
     background-color: orangered;
 }
@@ -152,10 +155,57 @@ footer a {
     transition: 1s;
     background-color: darkslategray;
     color: white;
+    text-align: center;
 }
 
 footer a:hover {
     text-decoration: underline;
     border: 3px dashed white;
     
+}
+
+/* Responsive Design */
+
+@media(max-width: 800px ) {
+    
+    .intro {
+        border: none;
+    }
+
+    .jungle {
+        width: 85%;
+    }
+
+    .container {
+        justify-content: space-around;
+    }
+    
+    .container div {
+        width: 30%;
+
+    }
+
+    
+}
+
+@media(max-width: 500px) {
+
+   
+
+   .intro {
+       width: 90%;
+   }
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-photo {
+        display: none;
+    }
+
+    footer {
+        flex-direction: column;
+    }
 }
