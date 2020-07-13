@@ -110,7 +110,7 @@ h1 {
     padding: 1.5%;
     margin: 2%;
     display: flex;
-    width: 10%;
+    width: 12%;
     flex-flow: column wrap;
     text-align: center;
     color: white;
@@ -138,6 +138,10 @@ h1 {
 .panel5 button:hover {
     text-decoration: underline;
     background-color: orangered;
+}
+
+.panel5 p {
+    padding: 10%;
 }
 
 
@@ -170,6 +174,7 @@ footer a:hover {
     
     .intro {
         border: none;
+        width: 70%;
     }
 
     .jungle {
@@ -190,7 +195,6 @@ footer a:hover {
 
 @media(max-width: 500px) {
 
-   
 
    .intro {
        width: 90%;
@@ -203,6 +207,15 @@ footer a:hover {
 
     .main-photo {
         display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div {
+        width: 45%;
     }
 
     footer {
