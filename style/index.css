@@ -58,8 +58,8 @@ nav a:hover {
 
 h1 {
     font-size: 50px;
-    width: 25%;
-    margin: 3% 0;
+    width: 60%;
+    margin: 3% auto;
     text-align: center;
     letter-spacing: 3px;
     font-family: 'Bungee Inline', cursive;
